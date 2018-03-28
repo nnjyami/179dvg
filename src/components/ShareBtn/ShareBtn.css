@@ -1,0 +1,13 @@
+.snsShare {
+  background-color: rgba(0,0,0,.05);
+  padding: calc(4px * 3) 2% calc(4px * 2);
+  margin: calc(4px * 3) 0 calc(4px * 4);
+  border-top: 1px solid rgba(0,0,0,.075);
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.snsShare_unit {
+  display: inline-block;
+  padding-right: calc(4px * 3);
+  margin-bottom: 0;
+  list-style: none;
+}

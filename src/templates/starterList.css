@@ -1,0 +1,27 @@
+.starterListWrap {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 2%;
+  background-color: rgba(0,0,0,.05);
+  box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+.starterList {
+  width: 47%;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+.starterList a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: none;
+}
+.starterList a img {
+  display: inline-block;
+  width: 100%;
+}

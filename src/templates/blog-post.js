@@ -15,7 +15,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const category = post.frontmatter.category
+    //const category = post.frontmatter.category
 
     return (
       <article className="a">
@@ -50,7 +50,6 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY-MM-DD")
         path
-        category
       }
       fields {
         slug

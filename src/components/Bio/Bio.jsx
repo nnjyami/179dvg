@@ -5,8 +5,8 @@ class Bio extends React.Component {
     return (
       <div className="bio">
         <p>
-          デザインとエンジニアの間で彷徨うブログ。{' '}
-          by <a href="https://twitter.com/nnjyami">nnjyami</a>
+          デザインとエンジニアの間で彷徨う開発ブログ。{' '}<br />
+          by <a href="https://twitter.com/nnjyami">nnjyami（んじゃみ）</a>
         </p>
       </div>
     )

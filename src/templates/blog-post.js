@@ -18,12 +18,13 @@ class BlogPostTemplate extends React.Component {
     const category = post.frontmatter.category
 
     return (
-      <article>
+      <article className="a">
         <Meta postNode={post} postPath={post.fields.slug} />
-        <h1>{post.frontmatter.title}</h1>
-        <p>{category}</p>
-        <time datetime={post.frontmatter.date}>{post.frontmatter.date}</time>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className="a_h">
+          <h1>{post.frontmatter.title}</h1>
+          <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>
+        </div>
+        <section className="a_b" dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr />
         <Bio />
       </article>

@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import {siteTitle} from '../../data/site-config'
+import '../styles/main.scss'
 
 class Template extends React.Component {
   render() {
@@ -9,11 +10,13 @@ class Template extends React.Component {
     let header
     if (location.pathname === '/') {
       header = (
-        <h1>
-          <Link to={'/'} >
-            {siteTitle}
-          </Link>
-        </h1>
+        <header className="is-top">
+          <h1>
+            <Link to={'/'} >
+              {siteTitle}
+            </Link>
+          </h1>
+        </header>
       )
     } else {
       header = (

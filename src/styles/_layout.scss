@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+$MAX_WIDTH: 980px;
+
+.wrapper {
+  background-color: #EFEFEF;
+  padding: 0;
+}
+
+// HEADER
+header {
+  width: 92%;
+  max-width: $MAX_WIDTH;
+  padding: 0 4%;
+  // top
+  &.is-top {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+  > h1 {
+    width: 100%;
+    padding: 0 0 18%;
+    font-size: 18px;
+    text-align: center;
+    background: linear-gradient(to right, rgb(240, 236, 17), rgb(40, 203, 209));
+    a {
+      padding-top: $GRID * 3;
+      border-top: 2px solid #000;
+      text-decoration: none;
+      font-size: 18px;
+      color: #000;
+    }
+  }
+
+  // article-page
+  p {
+    display: inline-block;
+    border-top: 2px solid #000;
+    padding: $GRID * 1 0 $GRID * 2.5;
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      color: #000;
+    }
+  }
+}
+
+/**
+* Article List
+*/
+.al {
+  width: 92% - 2 * 2;
+  max-width: $MAX_WIDTH;
+  margin: 0 auto $GRID * 3;
+  padding: $GRID * 4 2%;
+  background-color: #FFF;
+  box-shadow: 0 2px 2px rgba(0,0,0,.2);
+  &_t {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  &_d {
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: $GRID * 3;
+  }
+  &_e {
+    font-size: 11px;
+    text-align: justify;
+  }
+}
+
+/**
+* ARTICLE
+*/
+.a {
+  background: #FFF;
+
+  // header
+  &_h {
+    width: 100%;
+    padding: 10% 0 8%;
+    text-align: center;
+    background: linear-gradient(to right, rgb(240, 236, 17), rgb(40, 203, 209));
+    > h1 {
+      font-size: 28px;
+      margin-bottom: $GRID * 1;
+    }
+    > time {
+      font-size: 14px;
+    }
+  }
+  // body
+  &_b {
+    width: 92%;
+    max-width: $MAX_WIDTH;
+    background-color: #FFF;
+    margin: 0 auto;
+    padding: $GRID * 7 4%;
+
+    h2 {
+      line-height: 1.4;
+      margin-top: $GRID * 16;
+      &:first-child {
+        margin-top: $GRID * 8;
+      }
+    }
+    h3 {
+      line-height: 1.4;
+      margin-top: $GRID * 9;
+    }
+    h4 {
+      line-height: 1.4;
+      margin-top: $GRID * 8;
+    }
+    p {
+      margin-bottom: $GRID * 5;
+    }
+
+    a {
+      color: rgb(13, 163, 168);
+      text-decoration: underline;
+    }
+
+    ul,
+    ol {
+      margin: $GRID * 6 0;
+      li {
+        margin-bottom: $GRID * 2;
+        padding-left: 1em;
+        position: relative;
+        font-size: 16px;
+        p {
+          font-size: 16px;
+          margin-bottom: 0;
+        }
+        &:before {
+          content: '–';
+          font-size: 16px;
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        ul,
+        ol {
+          margin: $GRID * 1 0;
+        }
+      }
+    }
+
+    code {
+      font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+      padding: $GRID * 1 $GRID * 2;
+      background-color: rgba(0,0,0,.05);
+      border-radius: 6px;
+      font-size: 14px;
+      color: rgba(0,0,0,.8);
+    }
+
+    hr {
+      margin: $GRID * 12 0;
+    }
+
+    blockquote {
+      padding: $GRID * 3;
+      margin: 0 auto $GRID * 3;
+      background-color: rgba(0,0,0,.05);
+      box-shadow: 0 2px 2px rgba(0,0,0,.2);
+      font-style: italic;
+      h2, h3, h4 {
+        margin-top: $GRID * 1;
+      }
+      cite {
+        display: inline-block;
+        width: 100%;
+        font-size: 14px;
+        text-align: right;
+        color: rgba(0,0,0,.7);
+      }
+      p {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.bio {
+  text-align: center;
+  font-size: 14px;
+  margin: $GRID * 2 auto;
+}

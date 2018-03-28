@@ -4,7 +4,7 @@ module.exports = {
   //blogAuthorId: "casper", // The default and fallback author ID used for blog posts without a defined author.
   siteTitle: "dvg-179", // Site title.
   siteTitleAlt: "デザインとエンジニアの間をさまよう開発ブログ", // Alternative site title for SEO.
-  siteLogo: 'https://dvg.179.j/favicons/profPig.jpg', // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
+  siteLogo: 'https://dvg.179.jp/favicons/profPig.jpg', // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
   siteUrl: "https://dvg.179.jp", // Domain of your website without pathPrefix.
   //pathPrefix: "/gatsby-starter-casper", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription:
@@ -21,7 +21,7 @@ module.exports = {
   sitePaginationLimit: 10, // The max number of posts per page.
   googleAnalyticsID: "UA-330874-13", // GA tracking ID.
   siteSocialUrls: [
-    "https://github.com/haysclark/gatsby-starter-casper",
+    "https://github.com/nnjyami",
     "https://twitter.com/nnjyami",
     "mailto:nnjyami@gmail.com"
   ],

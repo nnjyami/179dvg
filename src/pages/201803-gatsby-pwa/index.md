@@ -1,7 +1,7 @@
 ---
 title: "GatsbyJSで Progressive High Performance Blog"
 date: "2018-03-08T21:02:32.169Z"
-path: "/201803-gatsbyCustomize/"
+path: "/201803-gatsby-pwa/"
 ---
 
 このブログは GatsbyJS という静的ジェネレーターで作成している。  

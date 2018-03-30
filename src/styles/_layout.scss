@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-$MAX_WIDTH: 980px;
+$MAX_WIDTH: 900px;
 
 .wrapper {
   background-color: #EFEFEF;
@@ -9,9 +9,9 @@ $MAX_WIDTH: 980px;
 
 // HEADER
 header {
-  width: 92%;
+  width: 92% - 2 * 2;
   max-width: $MAX_WIDTH;
-  padding: 0 4%;
+  padding: 0 2%;
   // top
   &.is-top {
     width: 100%;
@@ -20,8 +20,8 @@ header {
   }
   > h1 {
     width: 100%;
-    padding: 0 0 18%;
-    font-size: 18px;
+    padding: 6% 0 18%;
+    font-size: 32px;
     text-align: center;
     background: linear-gradient(to right, rgb(240, 236, 17), rgb(40, 203, 209));
     a {
@@ -87,7 +87,7 @@ header {
   // header
   &_h {
     width: 100%;
-    padding: 10% 0 8%;
+    padding: 5% 0 4%;
     text-align: center;
     background: linear-gradient(to right, rgb(240, 236, 17), rgb(40, 203, 209));
     > h1 {
@@ -100,7 +100,7 @@ header {
   }
   // body
   &_b {
-    width: 92%;
+    width: 92% - 2 * 2;
     max-width: $MAX_WIDTH;
     background-color: #FFF;
     margin: 0 auto;

@@ -10,7 +10,8 @@ path: /201803-netlify/
 
 Gatsby は Netlify プラグインとかあったので、なんか追加が必要なのかと思いきや、どんな Starter でも Github に Push しちゃえば、Netlify 側で Build してくれる…
 
-先日の登壇では張り切って「さくらの VPS で Nginx」とか言ったけど、VPS…いらない。特に僕のようなインフラ弱い人間には優しすぎる。  
+先日の登壇では張り切って「さくらの VPS で Nginx」とか言ったけど、VPS…いらない。  
+特に僕のようなインフラ弱い人間には優しすぎる。  
 ホストしてくれそうなサービスはあると思ってたけど、Build までサービス側でしてくれるとかスゴ過ぎる。
 
 Netlify 公式の チュートリアルに Gatsby のビルドの仕方は全て載ってた。  
@@ -20,8 +21,11 @@ Netlify 公式の チュートリアルに Gatsby のビルドの仕方は全て
 ## JAMStack
 Netlify ホストにすることでより JAMStack な構成に近づいたと思われる。  
 
-[JAMStack](https://jamstack.org/) は **JavaScript** のみで記述され、サーバーサイドや複雑な処理は **API** を利用。コンテンツ部分の **Markup** は静的ジェネレーターなどによって予めビルドしておくようなサイト構成の総称らしい。表示の際の高いパフォーマンス（表示速度）とセキュリティ、低コストで短い期間での開発がポイントのよう。  
-Gatsby もこの JAMStack の文脈もあり、人気があると先日の KyotoJS で sotayamasita さんが教えてくれた。  
+[JAMStack](https://jamstack.org/) はJavaScript、API、Markupの略。  
+**JavaScript** のみで記述され、サーバーサイドや複雑な処理は **API** を利用。コンテンツ部分の **Markup** は静的ジェネレーターなどによって予めビルドしておくようなサイト構成・Web開発アーキテクチャを指すものらしい。  
+高いパフォーマンス（表示速度）とセキュリティ、低コストで短い期間での開発がポイントのよう。  
+
+Gatsby もこの JAMStack の文脈もあり人気があると、KyotoJS で sotayamasita さんが教えてくれた。  
 来年以降、日本でも流行るバズワードになるかもしれない...らしい。
 
 そんな JAMStack を提唱し始めたのが Netlify らしい。  
@@ -32,7 +36,7 @@ Gatsby もこの JAMStack の文脈もあり、人気があると先日の Kyoto
 通常の Gatsby と違うのは package.json に Gatsby 含めるかどうかだけ。
 ローカルなどにある Gatsby のファイルに以下をするだけで準備が整う。
 
-```
+```shell
 $ npm install gatsby-cli --save
 ```
 
@@ -65,3 +69,9 @@ Sass（Scss）でしか書きたくなかったので、`gatsby-plugin-sass` を
 しかし、現行が `1.0.25` で `1.0.19` にしなきゃいけないとかモヤモヤする。
 
 
+## まとめ
+このブログを開始して、早くも 2ヶ月。  
+そして突然のサーバーを Netlify に移行。
+
+勉強のための VPS & Nginx だったんだけど、さらに新しい Netlify はとてつもなく簡単だった。
+もっと使いこなせるように周辺技術とか調べていこうと思う。

@@ -20,7 +20,7 @@ header {
   }
   > h1 {
     width: 100%;
-    padding: 5% 0 4%;
+    padding: 4% 0 4%;
     text-align: center;
     background: linear-gradient(to right, rgb(240, 236, 17), rgb(40, 203, 209));
     a {
@@ -51,7 +51,7 @@ header {
   width: 92% - 2 * 2;
   max-width: $MAX_WIDTH;
   margin: 0 auto $GRID * 3;
-  padding: $GRID * 4 2% $GRID * 8;
+  padding: $GRID * 4 2% $GRID * 5;
   background-color: #FFF;
   box-shadow: 0 2px 2px rgba(0,0,0,.2);
   &_t {

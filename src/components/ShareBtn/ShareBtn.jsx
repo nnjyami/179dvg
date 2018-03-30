@@ -14,7 +14,7 @@ import {
   EmailIcon,
 } from 'react-share'
 
-import './ShareBtn.css'
+import './ShareBtn.scss'
 
 export default function SNSShare({title, link}) {
   return (

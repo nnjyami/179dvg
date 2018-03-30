@@ -25,7 +25,7 @@ class BlogPostTemplate extends React.Component {
           <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>
         </div>
         <section className="a_b" dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
+        <ShareBtn title={post.frontmatter.title} link={`${siteUrl}/${post.fields.slug}`} />
         <Bio />
       </article>
     )

@@ -8,11 +8,11 @@ path: /201803-netlify/
 「Netlify 使ってみた」→ 記事になるな！と思ったんだけど、Netlify 簡単に出来すぎてヤバい。  
 記事にならないくらいの簡単さだったけど、Gatsby 側のバグを踏んでしまいしばらく苦しんだ。
 
-Gatsby は Netlify プラグインとかあったので、なんか追加が必要なのかと思いきや、どんな Starter でも Github に Push しちゃえば、Netlify 側で Build してくれる…
+Gatsby は Netlify プラグインとかあったので、なんか追加が必要なのかと思いきや、Github に Push しちゃえば、Netlify 側で Build してくれる…
 
 先日の登壇では張り切って「さくらの VPS で Nginx」とか言ったけど、VPS…いらない。  
 特に僕のようなインフラ弱い人間には優しすぎる。  
-ホストしてくれそうなサービスはあると思ってたけど、Build までサービス側でしてくれるとかスゴ過ぎる。
+ホストしてくれるサービスはあると思ってたけど、Build までサービス側でしてくれるとかスゴ過ぎる。
 
 Netlify 公式の チュートリアルに Gatsby のビルドの仕方は全て載ってた。  
 [A Step-by-Step Guide: Gatsby on Netlify](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/)
@@ -23,12 +23,17 @@ Netlify ホストにすることでより JAMStack な構成に近づいたと�
 
 [JAMStack](https://jamstack.org/) はJavaScript、API、Markupの略。  
 **JavaScript** のみで記述され、サーバーサイドや複雑な処理は **API** を利用。コンテンツ部分の **Markup** は静的ジェネレーターなどによって予めビルドしておくようなサイト構成・Web開発アーキテクチャを指すものらしい。  
-高いパフォーマンス（表示速度）とセキュリティ、低コストで短い期間での開発がポイントのよう。  
+高いパフォーマンス（表示速度）とセキュリティ、低コストで短い期間での開発を実現するためのアーキテクチャーのようだ
 
-Gatsby もこの JAMStack の文脈もあり人気があると、KyotoJS で sotayamasita さんが教えてくれた。  
+Gatsby はこの JAMStack の文脈もあり人気があると、KyotoJS で sotayamasita さんが教えてくれた。  
 来年以降、日本でも流行るバズワードになるかもしれない...らしい。
 
-そんな JAMStack を提唱し始めたのが Netlify らしい。  
+確かにパフォーマンスを重視するなら、静的な書き出しに勝るものはないと思う。  
+またファイルを CDN に載せる場合も静的なファイルにしないと上手く配信出来ないケースがほとんど。
+
+JS はコンパイルするのが当たり前になっているけど、Web サイト・アプリも Gatsby のように丸ごとコンパイルして JAMStack なアーキテクチャーにするのが当たり前になるかもしれない。
+
+そんな JAMStack を提唱し始めたのが Netlify らしい。Web の進化って本当に早い！
 最近名前はよく目にしていたけど、使ったことなかったので使ってみた。
 
 

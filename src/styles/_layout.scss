@@ -10,10 +10,13 @@ $MAX_WIDTH: 800px;
 // Tag
 code {
   font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-size: 14px;
+}
+p > code,
+li > code {
   padding: $GRID * 1 $GRID * 2;
   background-color: rgba(0,0,0,.05);
   border-radius: 6px;
-  font-size: 14px;
   color: rgba(0,0,0,.8);
 }
 

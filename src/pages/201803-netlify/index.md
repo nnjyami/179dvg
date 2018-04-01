@@ -15,13 +15,13 @@ Gatsby は Netlify プラグインとかあったので、なんか追加が必�
 ホストしてくれるサービスはあると思ってたけど、Build までサービス側でしてくれるとかスゴ過ぎる。
 
 Netlify 公式の チュートリアルに Gatsby のビルドの仕方は全て載ってた。  
-[A Step-by-Step Guide: Gatsby on Netlify](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/)
+[A Step-by-Step Guide: Gatsby on Netlify](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/){:target="_blank"}
 
 
 ## JAMStack
 Netlify ホストにすることでより JAMStack な構成に近づいたと思われる。  
 
-[JAMStack](https://jamstack.org/) はJavaScript、API、Markupの略。  
+[JAMStack](https://jamstack.org/){:target="_blank"} はJavaScript、API、Markupの略。  
 **JavaScript** のみで記述され、サーバーサイドや複雑な処理は **API** を利用。コンテンツ部分の **Markup** は静的ジェネレーターなどによって予めビルドしておくようなサイト構成・Web開発アーキテクチャを指すものらしい。  
 高いパフォーマンス（表示速度）とセキュリティ、低コストで短い期間での開発を実現するためのアーキテクチャーのようだ
 
@@ -70,7 +70,7 @@ Netlify移行に合わせて、少し前から準備していたスタイルの�
 Sass（Scss）でしか書きたくなかったので、`gatsby-plugin-sass` を使ったんだけど、そこに大きな罠が！
 
 `gatsby-plugin-sass` には `develop` の時は問題なけど、`build` には Sass で書いたスタイルが反映されないというバグがあるらしく、Gatsby の Issue でもいくつも上がっている。僕も見事にそこにハマってしまい、解決策を見つけるのに手間取ってしまった。  
-結局、[このIssue](https://github.com/gatsbyjs/gatsby/issues/4457)に書かれている通り、`gatsby-plugin-sass` のバージョンを `1.0.19` にすることで無事解消された。  
+結局、[このIssue](https://github.com/gatsbyjs/gatsby/issues/4457){:target="_blank"}に書かれている通り、`gatsby-plugin-sass` のバージョンを `1.0.19` にすることで無事解消された。  
 しかし、現行が `1.0.25` で `1.0.19` にしなきゃいけないとかモヤモヤする。
 
 

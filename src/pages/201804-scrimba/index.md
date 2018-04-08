@@ -18,7 +18,7 @@ Frontend Handbook は JSマスターな Cody Lindley 氏による 2018 年のフ
 
 
 ## Scrimba
-Scrimba は CodePen とドットインストールが混ざったような、共有&学習プロットホーム。  
+Scrimba は CodePen とドットインストールが混ざったような、共有&学習プラットホーム。  
 
 ![Scrimba Top](./scrimba-top.jpg)
 

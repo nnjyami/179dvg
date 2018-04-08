@@ -1,7 +1,7 @@
 ---
 title: Scrimba がフロントエンドの素振り&共有環境として優秀だった
 date: 2018-04-08T10:02:32.169Z
-path: /201803-scrimba/
+path: /201804-scrimba/
 ---
 
 Gatsby の資料にも盛りこんでいたが Frontend Handbook 2018 を読んだ。  

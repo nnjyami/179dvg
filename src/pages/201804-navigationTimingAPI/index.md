@@ -12,7 +12,7 @@ path: /201804-navigationTimingAPI/
 Chrome の DevTool を開くと、Console に常にアラートが2件。  
 検証中とかにアラート出てると「え？なになに？」ってびっくりします。 
 
-![Alerts on Chrome DevTool](./chrome-dev.jpg)
+![Alerts on Chrome DevTool](./chrome-dev2.jpg)
 
 内容を読むと、サイトやアプリのエラーでないことはすぐわかります。
 

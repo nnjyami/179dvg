@@ -5,7 +5,7 @@ path: /201804-navigationTimingAPI/
 ---
 
 13日の金曜日、ドタバタしていてブログが書けずに焦ってます。  
-書きたいテーマはあるのですが、まだまとまってなかったり、検証が済んでなかったり...
+書きたいテーマはあるのですが、まだまとまってなかったり、検証が済んでなかったり...  
 年明けから Chrome に出るようになっていたアラートについて調べてみました。  
 
 ## Chrome DevTool に出るアラート
@@ -19,7 +19,7 @@ Chrome の DevTool を開くと、Console に常にアラートが2件。
 `[Deprecation] chrome.loadTimes() is deprecated, instead use standardized API: nextHopProtocol in Navigation Timing 2.`
 
 「なんだ。よかった！」と思って放置してたけど、なんかずっとしつこく出てるし、どういうことなのか調べてみた。内容としては、「chrome.loadTimes() が非推奨になり、代わりに標準化された API である Navigation Timing 2 が使えるよ」というもの。  
-結論は、まさにその通りで、他のブラウザに先行して`chrome.loadTimes() `として実装されていたものが標準化され、`Navigation Timing 2`APIとして複数のブラウザに実装されたので、Chrome もそちらに合わせて、独自実装の`chrome.loadTimes() `は Chrome 64 で非推奨にするよということ。  
+他のブラウザに先行して`chrome.loadTimes() `として実装されていたものが標準化され、`Navigation Timing 2`APIとして複数のブラウザに実装されたので、Chrome もそっちを推奨にして、独自実装の`chrome.loadTimes() `は Chrome 64 で非推奨にするよということ。  
 とてもいい話のような気がするから、アラート消してほしい。
 
 <a href="https://developers.google.com/web/updates/2017/12/chrome-loadtimes-deprecated" target="_blank">Chrome 64 to deprecate 
@@ -27,7 +27,7 @@ the chrome.loadTimes() API</a>
 
 
 ## Navigation Timing 2
-上記の Chrome のブログの方で代替する書き方について解説されているが、せっかくなので CodeSandbox 使って試してみた。 
+上記の Chrome のブログの方で代替する書き方について解説されているが、せっかくなので <a href="https://codesandbox.io/" target="_blank">CodeSandbox</a> 使って試してみた。 
 
 CodeSandbox は前回取り上げた Scrimba のエディター部分を取り出したようなサービスで、HotReload もガンガン効いてとても楽しい。
 今回のようなことを試すときも、簡単に環境が出来上がっているところに、コードだけ書けるのでスゴく楽。

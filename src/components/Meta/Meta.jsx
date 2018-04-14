@@ -16,7 +16,7 @@ export default function Meta({postNode, postPath}) {
   const userTwitter = 'nnjyami'
   const twitterShareCard = 'summary' //summary or summary_large_image
 
-  const image = blogURL + "favicons/dvg179.png"
+  const image = blogURL + "favicons/dvg179icon.png"
 
   if(postNode && postNode.frontmatter){
     blogPost = true

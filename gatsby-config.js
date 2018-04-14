@@ -30,27 +30,27 @@ module.exports = {
         theme_color: "#e2e22d",
         display: "minimal-ui",
         icons: [
+          /*
           {
             src: `/favicons/profPig.jpg`,
             sizes: `180x180`,
             type: `image/jpg`,
           },
-          /*
+          */
           {
             // Everything in /static will be copied to an equivalent
             // directory in /public during development and build, so
             // assuming your favicons are in /static/favicons,
             // you can reference them here
-            src: `/favicons/icon-192x192.png`,
-            sizes: `192x192`,
+            src: `/favicons/dvg179icon.png`,
+            sizes: `265x265`,
             type: `image/png`,
           },
           {
-            src: `/favicons/icon-512x512.png`,
-            sizes: `512x512`,
+            src: `/favicons/dvg179icon@2x.png`,
+            sizes: `530x530`,
             type: `image/png`,
           },
-          */
         ],
       },
     },

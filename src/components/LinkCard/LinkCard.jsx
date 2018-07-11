@@ -1,5 +1,5 @@
 import React from 'react'
-import parser from 'ogp-parser'
+const parser = require("ogp-parser")
 
 import './LinkCard.scss'
 

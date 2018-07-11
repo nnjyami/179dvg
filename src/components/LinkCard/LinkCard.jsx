@@ -1,12 +1,12 @@
 import React from 'react'
-const parser = require("ogp-parser")
 
 import './LinkCard.scss'
 
+const parser = require('ogp-parser')
+
 class LinkCard extends React.Component {
   constructor(props) {
-    super(props);
-    // Don't call this.setState() here!
+    super(props)
     this.state = {
       title: null,
       image: null,

@@ -2,7 +2,7 @@ module.exports = {
   //blogPostDir: "sample-posts", // The name of directory that contains your posts.
   //blogAuthorDir: "sample-authors", // The name of directory that contains your authors.
   //blogAuthorId: "casper", // The default and fallback author ID used for blog posts without a defined author.
-  siteTitle: "dvg-179", // Site title.
+  siteTitle: "179 Blog", // Site title.
   siteTitleAlt: "デザインとエンジニアの間をさまよう開発ブログ", // Alternative site title for SEO.
   siteLogo: 'https://dvg.179.jp/favicons/profPig.jpg', // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
   siteUrl: "https://dvg.179.jp", // Domain of your website without pathPrefix.
@@ -46,7 +46,7 @@ module.exports = {
   ],
   // Copyright string for the footer of the website and RSS feed.
   copyright: {
-    label: "dvg179" // Label used before the year
+    label: "179 Blog" // Label used before the year
     // year: "2018" // optional, set specific copyright year or range of years, defaults to current year
     // url: "https://www.gatsbyjs.org/" // optional, set link address of copyright, defaults to site root
   },

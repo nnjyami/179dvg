@@ -6,6 +6,7 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio/Bio'
 import Meta from '../components/Meta/Meta'
 
+
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
